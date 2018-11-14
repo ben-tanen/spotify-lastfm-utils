@@ -1,3 +1,4 @@
 .DS_Store
 .cache*
+.Rhistory
 data/api-keys.json

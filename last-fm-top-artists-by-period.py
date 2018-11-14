@@ -12,8 +12,8 @@ d0 = date(2018, 1, 1) # earliest date to consider
 dn = date.today()     # latest date to consider (today)
 dd = timedelta(days=day_span)
 
-d1 = d0 - dd
-d2 = d0
+d1 = dn - dd
+d2 = dn
 
 # loop through relevant date ranges
 while d1 >= d0:
@@ -37,4 +37,4 @@ while d1 >= d0:
 
 # convert to dataframe and save
 df = pd.DataFrame(artist_counts)
-df.to_csv('data/top-artists-%ddays-%s-to-%s.csv' % (day_span, d1.isoformat(), d0.isoformat()), index = False)
+df.to_csv('data/top-artists-%ddays-%s-to-%s.csv' % (day_span, d1.strftime('%d%b%Y'), dn.strftime('%d%b%Y')), index = False)

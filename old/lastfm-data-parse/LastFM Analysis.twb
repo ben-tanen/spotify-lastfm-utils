@@ -1,0 +1,3946 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10200.17.0216.1925                               -->
+<workbook source-build='10.2.0 (10200.17.0216.1925)' source-platform='mac' version='10.2' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='tracks_04-05-2017' inline='true' name='federated.1cimrwt07dgcq21ewex6v0o3wwy2' version='10.2'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='tracks_04-05-2017' name='textscan.0afyj8w18naom2153ao570osi8se'>
+            <connection class='textscan' directory='/Users/ben-tanen/Desktop/Projects/LastFM Data Parse' filename='tracks_04-05-2017.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0afyj8w18naom2153ao570osi8se' name='tracks_04-05-2017.csv' table='[tracks_04-05-2017#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Title' ordinal='1' />
+            <column datatype='string' name='Artist' ordinal='2' />
+            <column datatype='string' name='Album' ordinal='3' />
+            <column datatype='datetime' name='Date' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[tracks_04-05-2017.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Title]</local-name>
+            <parent-name>[tracks_04-05-2017.csv]</parent-name>
+            <remote-alias>Title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Artist</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Artist]</local-name>
+            <parent-name>[tracks_04-05-2017.csv]</parent-name>
+            <remote-alias>Artist</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Album</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Album]</local-name>
+            <parent-name>[tracks_04-05-2017.csv]</parent-name>
+            <remote-alias>Album</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[tracks_04-05-2017.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;datetime&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[tracks_04-05-2017.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <column datatype='string' name='[Artist]' role='dimension' type='nominal' />
+      <column datatype='integer' hidden='true' name='[F1]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column-instance column='[Artist]' derivation='None' name='[none:Artist:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.542339' measure-ordering='alphabetic' measure-percentage='0.457661' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Artist:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Adele&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Alvvays&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Animal Years&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Austin Plaine&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Beach House&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Benjamin Francis Leftwich&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Black Girls&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Boom Forest&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Bruno Mars&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Cat Clyde&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Chris Kando Iijima, Joanne Nobuko Miyamoto, \&quot;Charlie\&quot; Chin&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Colony House&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Dan Croll&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Delta Spirit&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Doris Day&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Electric Guest&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Etta James&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Field Report&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Fountains of Wayne&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Galactic&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Gorillaz&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Har Mar Superstar&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Hot 8 Brass Band&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Irma Thomas&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Jake McMullen&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Jesse Dee&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;John K. Samson&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Joseph&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Kaleo&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;King Charles&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Lady Lamb&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Lift to Experience&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;LP&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Mandolin Orange&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Matt Pond PA&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Milky Chance&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Mother Mother&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Nathan Fox&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Noirre&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Oscar Isaac&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Paul Simon&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Pretty Lights&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Ray LaMontagne&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Rosemary Clooney&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Saint Raymond&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Sean Hayes&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Sleeping at Last&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Southeast Engine&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Super City&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;The Airborne Toxic Event&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;The Brothers Comatose&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;The Donnis Trio&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;The Isley Brothers&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;The Milk Carton Kids&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;The Rosebuds&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;The Sugarhill Gang&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;The Weeknd&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Timber Timbre&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Twin Shadow&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Vitamin String Quartet&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Whitehorse&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Yeasayer&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;41st and Home&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Alexander&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Andrew Bird&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Ásgeir&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Band of Skulls&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Ben Folds Five&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Big Mama Thornton&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Bob Dylan&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Brie Larson&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Calliope Musicals&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Charlie Mars&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;clonki&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Current Swell&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Dawn Golden&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Dixie Chicks&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Dylan Charbeneau&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Emma Louise&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Father John Misty&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Foo Fighters&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Fruition&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Girls&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Grouplove&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Hippo Campus&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;I am Oak&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Jack Johnson&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;JC Brooks &amp; The Uptown Sound&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;JJ Grey &amp; Mofro&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Johnny Stimson&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Jump, Little Children&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Kenneth Pattengale &amp; Joey Ryan&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Kurt Travis&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Lera Lynn&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;London Grammar&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Madisen Ward And The Mama Bear&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Martin Sexton&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Michael Bernard Fitzgerald&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Mona&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;My Morning Jacket&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Nick Waterhouse&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Old Crow Medicine Show&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Passion Pit&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Plants and Animals&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;RAC&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;River Whyless&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Ryan Adams&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Sarah Jaffe&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Shovels &amp; Rope&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Solomon Burke&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Stephen Kellogg&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Tennis&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;The Belle Brigade&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;The Dear Hunter&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;The Greeting Committee&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;The Lighthouse and the Whaler&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;The Pack A.D.&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;the Soil &amp; the Sun&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;The Vaccines&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;The Yrs&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Travelers&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Van Morrison&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;We Were Promised Jetpacks&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Win Win&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Zoe Kravitz&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;AC/DC&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Allman Brown&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Andy Shauf&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Augustana&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Bassh&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Ben Howard&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Billy Preston&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Body Language&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Broken Social Scene&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Carole King&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Chic Gamine&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Coconut Records&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Damien Jurado&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Death Grips&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Dolorean&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Ed Sheeran&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Eric Hutchinson&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Fenech-Soler&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Fort Atlantic&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;G&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Glossary&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;HAIM&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Honeyblood&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;In the Valley Below&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Jackie Onassis&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Jenny Owen Youngs&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Joe Purdy&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Jon Bellion&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Justin Timberlake&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Kiev&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Kyle Thornton &amp; The Company&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Lewis Watson&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Lost Lander&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Major Lazer&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Matt &amp; Kim&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mighty Oaks&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Moonchild&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Nahko and Medicine for the People&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Nikki M. James&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;One Hundred Dollars&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Patti Page&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Porcelain Raft&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Railway Gamblers&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Rogue Valley&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;S. Carey&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Say Hi&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;sjowgren&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Sonny Cleveland&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Stu Larsen&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;The 1975&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;The Bright Light Social Hour&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;The Dirty Guv&apos;nahs&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;The Hip Abduction&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;The Lumineers&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;The Rare Occasions&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;The Staves&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;The War and Treaty&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Tigers in the Sky&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;TV on the Radio&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Various Cruelties&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;White Arrows&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Wolfmother&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Alabama Shakes&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;American Royalty&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Antony and the Johnsons&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Bad Bad Hats&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Beauville&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;BESTie&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Blind Pilot&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Bosley&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Butch Walker and The Black Widows&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Catfish and The Bottlemen&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Chuck Berry&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Cosmo Jarvis&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Dark Dark Dark&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;DeYarmond Edison&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Dr. Dog&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Elle King&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Faces&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Fitz and the Tantrums&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Francois Peglau&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Generationals&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Grandmaster Flash &amp; The Furious Five feat. Melle Mel &amp; Duke Bootee&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Heartless Bastards&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;How Sad&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Ituana&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Jamestown Revival&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Jidenna&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;John Mayer&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Josh Record&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Kat Wright &amp; The Indomitable Soul Band&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Kishi Bashi&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Laura Marling&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Little Comets&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Luke Levenson&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Margot &amp; the Nuclear So and So&apos;s&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Matthew E. White&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Miniature Tigers&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;MS MR&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;NEEDTOBREATHE&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Novo Amor&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Palace&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Pete Rock &amp; C.L. Smooth&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Puddle of Mudd&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Regina Spektor&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Ruby the Rabbitfoot&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Sam Burchfield&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Seven Lions&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Smooth Hound Smith&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;St. South&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Sweet Spirit&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;The Asteroids Galaxy Tour&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;The Cat Empire&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;The Family Crest&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;The KickDrums&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;The Naked and Famous&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;The Scarlet Harlots&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;The Tallest Man on Earth&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;The Wet Darlings&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;TOKiMONSTA&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;U2&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Wake Owl&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Wild Nothing&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;You Me &amp; Apollo&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Ages and Ages&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Amason&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;AnR&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Avid Dancer&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Beach Slang&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Benji Hughes&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Black Gold&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Born Gold&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Bry Webb&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Cat Power&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Chris Thile&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Conner Youngblood&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Daniel Ahearn &amp; The Jones&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Desert Noises&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Dotan&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Elephant Revival&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Evenings&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Fink&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Foxygen&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Gardiner Sisters&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Grace Love and the True Loves&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Hard Working Americans&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Houndmouth&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Iron &amp; Wine&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;James Bay&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Jesse Marchant&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;John Legend&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Josh Gad&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Kali Uchis&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Kings of Leon&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Lake Street Dive&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Lil Dicky&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Lucius&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Mapei&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Matthew and the Arrogant Sea&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Milo Greene&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Motopony&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Nathaniel Rateliff&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;NONONO&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Other Lives&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Pearl and the Beard&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Priory&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Rayland Baxter&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Royal Blood&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Saintseneca&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Sean Rowe&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Sleepwalkers&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Spencer &amp; Antfood&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Sure Sure&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;The Antlers&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;The California Honeydrops&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;The Dramatics&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;The John Butler Trio&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;The Morning Benders&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;The Rubens&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;The Suitcase Junket&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;The Weeks&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Tired Pony&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Two Door Cinema Club&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Volcano Choir&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Whitley&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;yellow bird project&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Active Child&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Aloe Blacc&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Angus &amp; Julia Stone&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;AUGUSTINES&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Bastille&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Ben Kweller&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Bipolar Sunshine&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Bombadil&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Bronze Radio Return&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Caroline Rose&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Childish Gambino&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Cold War Kids&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Damien Rice&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Deer Tick&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Dominoes&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Eddie Vedder&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Escondido&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Fialta&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Fort Frances&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;G-Eazy&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;GoGo Penguin&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Half Moon Run&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Honeysuckle&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Incubus&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Jackson C. Frank&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Jeremy Kay&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Joel Cross&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Jon Foreman&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Justin Townes Earle&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Kim Churchill&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;L.A. Salami&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Liam Bailey&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Loud Forest&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Man Man&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Matt Corby&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Miike Snow&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Moonrise Nation&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Naomi Shelton &amp; the Gospel Queens&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;No BS! Brass Band&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Only Real&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Patty Griffin&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Porter Robinson&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Rainbow Kitten Surprise&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Rogue Wave&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Safia&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;SBTRKT&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Ski Lodge&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Sons Of The East&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Sufjan Stevens&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;The A-Sides&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;The Brilliance&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;The Districts&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;The Hold Steady&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;The Menzingers&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;The Replacements&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;The Strokes&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;The War on Drugs&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;TiGERTOWN&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Tweedy&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Verskotzi&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;White Denim&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;X Ambassadors&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Alex Mercado Trio&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Anderson East&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Arkells&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Ball Park Music&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Belle and Sebastian&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Big Brother &amp; The Holding Company&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Bo Saris&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Brandi Carlile&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Cake&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;CHAPPO&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Cliff Martinez&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Cuckoo Chaos&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;David Wax Museum&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Disclosure&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Dusty Springfield&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Emily Kinney&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Fast Romantics&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Fly Golden Eagle&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;From Indian Lakes&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Gin Wigmore&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Grizfolk&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;High Highs&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Husky&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Jack + Eliza&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Jay-Z &amp; Kanye West&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Jimmy Eat World&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Johnny Cash&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Judah &amp; the Lion&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Kendall Street Company&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Kopecky&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Leif Vollebekk&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Local Natives&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;machineheart&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Martha Reeves &amp; The Vandellas&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Menomena&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Mo Lowda &amp; the Humble&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;My Brothers And I&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;NewVillager&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;OK Go&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Parker Millsap&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Pink Floyd&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Quiet Life&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Rilo Kiley&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;RX Bandits&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Sanders Bohlke&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Shoos Off&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Sol Cat&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;State Radio&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Taylor Swift&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;The Beach Boys&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;The Colourist&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;The Ghost of Paul Revere&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;The Last Bison&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;The Oh Hellos&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;The Shouting Matches&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;The University Of Wisconsin-Eau Claire&apos;s Fifth Element&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;The Wombats&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Traditional&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Vampire Weekend feat. Danny Brown, Heems &amp; Despot&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Watsky&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Willy Mason&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Zerbin&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;A Great Big World&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Alexi Murdoch&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Andrew Duhon&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Astronauts, etc.&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Barbarossa&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Ben Folds with the West Australian Symphony Orchestra&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Big Scary&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Bob Schneider&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Brijs&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Capital Cities&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Charlie Patton&apos;s War&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Cloud Control&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;D.D Dumbo&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Dawn Penn&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;DJ 21azy&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Dylan Kelly&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Emma Stone&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Feist&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Foreign Fields&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Future Generations&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Givers&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Guards&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Hollow Coves&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Imaginary Cities&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Jack White&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Jeffrey Martin&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Joan Osborne&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Johnnyswim&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Junip&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Kevin Morby&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Kurt Vile&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Lesley Gore&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Loon Lake&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Maggie Koerner&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Marty O&apos;Reilly &amp; the Old Soul Orchestra&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Michael Kiwanuka&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Monarchs&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Mystery Jets&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Nico&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Old Lights&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Patrick James&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Platon Karataev&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Radiation City&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Rivvrs&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Ryan Bingham&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Sarah Jarosz&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Silversun Pickups&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Somos&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Sticky Fingers&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Terraplane Sun&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;The Bens&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;The Decemberists&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;The Griswolds&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;The London Souls&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;The Paper Kites&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;The Spartones from Greensboro, NC&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;The Velvet Underground&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;The Zolas&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Trent Reznor and Atticus Ross&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Van William&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Weezer&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Wiz Khalifa&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Zulu Winter&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Alex Bleeker And The Freaks&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Anders Osborne&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Aretha Franklin&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Badly Drawn Boy&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Beirut&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Bibio&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Blu Cantrell&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Boy Named Banjo&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Caamp&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Chairlift&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;City and Colour&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Crying&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;David Gray&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Dirty Gold&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Drew Holcomb &amp; the Neighbors&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Emanuel and the Fear&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Family Portrait&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Flint Eastwood&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Freedom Fry&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Geowulf&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Gregory Alan Isakov&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Hey Ocean!&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Hundred Waters&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;J. Cole&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Jason Isbell&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Jimi Hendrix&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;John Vincent III&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;JP Cooper&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Keith Johns&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Kodaline&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Leanids&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Liz Vice&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;M. Ward&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Mark Ronson&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Meg Mac&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;MNEK&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Muse&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Neutral Milk Hotel&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Of Monsters and Men&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Papa&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Phox&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Queens of the Stone Age&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Rhiannon Giddens&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Run–D.M.C.&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;San Cisco&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Shimmering Stars&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;So Many Wizards&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Stark Sands with Punch Brothers&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Tall Tall Trees&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;The Bandoliers&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;The Civil Wars&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;The Franklin Electric&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;The Knux&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;The New Basement Tapes&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;The Shins&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;The University Of Georgia&apos;s With Someone Else&apos;s Money&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;The Wild Reeds&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Tor Miller&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Valley Queen&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Warpaint&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Will Joseph Cook&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Zach Deputy&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Adam Barnes&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Alpine&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Angus Stone&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Aunt Martha&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Bat for Lashes&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Ben Lee&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Birdy&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Bombay Bicycle Club&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;BROODS&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Caroline Smith&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;chris and thomas&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Coldplay&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Damon Albarn&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Del Water Gap&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Don Brownrigg&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Edward Sharpe &amp; The Magnetic Zeros&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Eskmo&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Fiction Family&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Fossil Collective&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Gabriel Kahane&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;goldford&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Hall &amp; Oates&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Horse Feathers&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Ingrid Michaelson&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Jacob Banks&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Jeremy Messersmith&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Joey Bada$$&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Jon Hopkins&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;k!tch&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Kina Grannis&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;La La Land Cast&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Lianne La Havas&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Louis Jordan&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Manchester Orchestra&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Matt Costa&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Mikky Ekko&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Morningsiders&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Nap Eyes&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Noah and the Whale&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Opus Orange&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Paul McCartney&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Portugal. The Man&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Ratatat&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Rolling Blackouts Coastal Fever&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Said the Whale&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Scoundrels&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Sky Ferreira&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Sorority Noise&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Summer Heart&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;The Accidentals&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;The Brinks&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;The Dodos&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;The Housemartins&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;The Microphones&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;The Revivalists&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;The Strumbellas&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;The Washington University in St. Louis Mosaic Whispers&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Tim McMorris&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Twiddle&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Vetiver&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;White Hinterland&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Xavier Rudd&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Alberta Cross&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Aminé&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Aqueduct&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Bad Books&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Bee Caves&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Beta Radio&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Blitzen Trapper&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Bowerbirds&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Buxton&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Caught a Ghost&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;CHVRCHES&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Counting Crows&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Daughter&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Dialog Cet&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Drake&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Elliot Root&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Falls&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Flearoy&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Frank Ocean&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Gentlemen Hall&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Great Lake Swimmers&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Henry Jamison&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Hozier&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Ivan &amp; Alyosha&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Japandroids&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Jim and Sam&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;John Mayer Trio&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Josh Ritter&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Keaton Henson&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Kitty Wells&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Laura Mvula&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Little Green Cars&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Lykke Li&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Mariah Carey&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Max Frost&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Mipso&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Mt. Joy&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Nerves Junior&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Oberhofer&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Panama&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Peter Bjorn and John&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Punch Brothers&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Release the Sunbird&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Run River North&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Sam Cooke&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Shakey Graves&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Snakadaktal&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;St. Vincent&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Sylvan Esso&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;The Avett Brothers&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;The Cave Singers&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;The Features&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;The Killers&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;The National&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;The Secret Sisters&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;The Temper Trap&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;The White Panda&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Tom Brosseau&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Unknown Mortal Orchestra&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Walker Lukens&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Wild Party&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;You Won&apos;t&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Alessandro Tabora&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Among Brothers&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Arcade Fire&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Bad Rabbits&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Bee Gees&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Betty &amp; Oswald&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Blood Orange&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Boy &amp; Bear&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;C2C&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;CeeLo Green&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;cicada rhythm&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Courtney Barnett&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Dave Barnes&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Die Antwoord&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Dresses&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Elliott Smith&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Family and Friends&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Fleet Foxes&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Frank Sinatra&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Geographer&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Green Day&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Henry the Archer&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Hudson Taylor&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;iwantaltitude&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Japanese Wallpaper&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Jim James&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;John Mulaney&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Josh Rouse&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Keegan DeWitt&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Kiyo Cato&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Lawrence&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Little May&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Lyla Foy&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Mario&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Max Richter&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Mipso Trio&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Muddy Waters&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Netherfriends&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Odessa&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Panama Wedding&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Phoenix&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Puss N Boots&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Remy Zero&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Run the Jewels&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Sam Smith&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Sharon Jones and the Dap-Kings&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Snarky Puppy&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Star &amp; Micey&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Talking Heads&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;The Bailen Brothers&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;The Chain Gang of 1974&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;The Felice Brothers&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;The Kingston Trio&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;The National Parcs&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;The Shadowboxers&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;The Temptations&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;The White Stripes&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Tom Odell&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;VACATIONER&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Walter Mitty And His Makeshift Orchestra&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Wilderado&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Young the Giant&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Alex G&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Anderson .Paak&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Ark Life&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Bahamas&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Bell X1&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Big Black Delta&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Blue Scholars&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Braddigan&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Cage the Elephant&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Chance the Rapper&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Clap Your Hands Say Yeah&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Crystal Fighters&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;David Ramirez&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Disagony&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Dustin Tebbutt&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Emile Haynie&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Fast Planet&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Florence + the Machine&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Fremont&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Gerard Way&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Greyhounds&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Hiatus Kaiyote&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Hungry Kids of Hungary&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;J.K. Simmons&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Javier Dunn&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Jimmy Cliff&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;John Wasson&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Jr Jr&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Kelley Stoltz&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Kongos&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Lee Fields &amp; The Expressions&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Lo-Fang&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Machine Gun Kelly&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Maroon 5&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Megan Washington&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Mo Kenney&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Mutual Benefit&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;New Madrid&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;of Montreal&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Paper Bird&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Pickwick&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Quiet Hounds&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Rhye&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Rusted Root&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;San Fermin&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Shinyribs&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;SoKo&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Starship&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Tame Impala&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;The Barr Brothers&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;The Collection&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;The Fray&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;The Kooks&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;The New Pornographers&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;The Shirelles&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;The University of Rochester Midnight Ramblers&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;The Wind and the Wave&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Tow&apos;rs&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Vampire Weekend&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Water Liars&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Willie Nelson&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Zea and the Copper Children&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Alex Turner&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Andrew Belle&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Armand Margjeka&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Band of Horses&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Ben Folds&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Big Joe Turner&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Boats&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Brian Regan&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Calexico&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Charles Bradley&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Clifflight&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Cults&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Dawes&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Dispatch&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Dyan B.&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Eminem&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Fat Freddy&apos;s Drop&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Fmlybnd&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Fruit Bats&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Girl Talk&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Grizzly Bear&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Hip Parade&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;I Am Arrows&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Jack Garratt&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Jaymay&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Jinja Safari&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Johnny Flynn&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Jukebox the Ghost&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Kendrick Lamar&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Kristin Diable&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Leon Bridges&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Logic&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Madaila&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Martha Wainwright&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Metric&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Modest Mouse&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;My bubba&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Nick Drake&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Oketo&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Passenger&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Pixies&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Ra Ra Riot&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;River City Extension&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Ry x&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Santana&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Shout Out Louds&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;solo woods&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Staying for the Weekend&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Tedeschi Trucks Band&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;The Bees&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;The Common Linnets&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;The Great American Canyon Band&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;The Lawsuits&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;The Ohio University Leading Tones&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;The Smiths&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;The Unlikely Candidates&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;The Wood Brothers&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Trampled by Turtles&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Van Halen&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;We Are Augustines&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Wilson Pickett&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Zero 7&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Agnes Obel&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;American Football&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Anthony D&apos;Amato&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Awolnation&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Bear&apos;s Den&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Bent By Elephants&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Blake Mills&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Born Ruffians&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Busman&apos;s Holiday&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Cataldo&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Christian Lee Hutson&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Conor O&apos;Brien&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Daniel Ellsworth &amp; The Great Lakes&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Devendra Banhart&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Doug Hoyer&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Ella Eyre&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Ezra Bell&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Firehorse&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Foy Vance&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Gary Clark Jr.&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Grace Mitchell&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Harriet&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;House ghost&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Isaiah Rashad&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;James Blake&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Jesse Woods&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;John Mark McMillan&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Josh Garrels&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Kanye West&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Kingswood&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Langhorne Slim&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Lindsay Perry&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Lucy Rose&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Margaret Glaspy&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Matthew And The Atlas&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;MINDY JONES&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Mount Moriah&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Nathaniel Rateliff &amp; the Night Sweats&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;North Mississippi Allstars&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Otis Redding&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Penguin Prison&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Priscilla Ahn&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Real Estate&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Royal Canoe&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Sam &amp; Dave&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Seryn&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Slow Club&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;St. Paul &amp; The Broken Bones&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Susto&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;The Apache Relay&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;The Californian&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;The Drums&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;The Jungle Giants&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;The Moth &amp; the Flame&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;The Sacramento State Jazz Singers&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;The Supervillains&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;The Weepies&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Toadies&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Tycho&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Voxtrot&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Wilco&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Yellow Ostrich&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Adam Heldring&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;alt-J&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Animal Collective&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Aurora&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Beach Fossils&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Benjamin Booker&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Black English&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Bon Iver&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Brooks Wheelan&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Cary Brothers&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Chris Bathgate&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Colin Hay&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Dan Auerbach&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Delicate Steve&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Donovan Woods&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Edwin Starr&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Esmé Patterson&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Fidlar&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Foster the People&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Gabrielle Aplin&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Good Old War&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Hamilton Leithauser + Rostam&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Hospital Ships&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Interpol&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Jake Bugg&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Jerry Douglas&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Jóhann Jóhannsson&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;José González&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Kail Baxley&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;King Baby James&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Labi Siffre&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Life In Film&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Louis Jordan &amp; His Tympany Five&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Manchester Orchestra, Frightened Rabbit&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Matt Phillips&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Miles Davis&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Motel Radio&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Natasha Leggero&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Noah Gundersen&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Oren Lavie&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Paul Otten &amp; Michelle Lockey&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Pressing Strings&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Ray Charles&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Roo Panes&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Saint Motel&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Sea Wolf&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Slash&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;South Park&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Sunset Sons&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;The Acid&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;The Bros. Landreth&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;The Dominoes&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;The Hunts&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;The Middle East&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;The Roosevelts&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;The Suffers&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;The Weavers&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Tim Moxam&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Twin Forks&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Villagers&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;White Lung&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Yeah Yeah Yeahs&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;A Silent Film&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Alfred Hall&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Andrew McMahon in the Wilderness&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Atmosphere&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Barton Carroll&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Ben Gibbard&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Big Tree&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Bob Weir&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;British India&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Car Seat Headrest&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Cheers Elephant&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Cloud Nothings&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;D&apos;Angelo&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Dead Man&apos;s Bones&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Django Django&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Dylan LeBlanc&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Emperor X&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Fellowship Creative&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Forest City Lovers&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Future Islands&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Glass Animals&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Guster&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Hollow Wood&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Imagine Dragons&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Jack&apos;s Mannequin&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Jellyfish&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Joe Hertler &amp; the Rainbow Seekers&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Jon and Roy&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Justin Bieber&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Kid Cudi&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Kwesi Foraes&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Let&apos;s Eat Grandma&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Lord Huron&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Magic Man&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Marvin Gaye&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Michael Potts&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Monogold&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;N.W.A&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Night Beds&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Old Man Canyon&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Patrick O&apos;Hearn&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Poliça&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Radical Face&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;RJD2&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Ryan Gosling&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Saskwatch&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Simon &amp; Garfunkel&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Son Little&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Stillwater Giants&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Thao&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;The Black Keys&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;The Dig&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;The Growlers&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;The Lone Bellow&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;The Preatures&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;The Spinners&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;The Walkmen&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Thepetebox&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Tuka&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Vance Joy&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Westward the Tide&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Wolf Alice&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Alessia Cara&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Amos Lee&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Architecture in Helsinki&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Bad Suns&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Behaving&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Bhi Bhiman&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Blood Red Shoes&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Boy Mandeville&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;C:EO&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Chadwick Stokes&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Citizen Cope&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Courtney John&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Dave Monks&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Dinah Shore&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Drew Grow &amp; The Pastors Wives&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Elvis Presley&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Family of the Year&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Fleetwood Mac&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Frazey Ford&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;George Ezra&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Greensky Bluegrass&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Here We Go Magic&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Hugo Hans&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;J Roddy Walston And The Business&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Jason Collett&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Jimi Charles Moody&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;John Newman&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Joshua Burnside&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Keenan O&apos;Meara&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Knox Hamilton&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;LCD Soundsystem&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Little Red&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;M83&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Maritime&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Maxence Cyrin&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;MisterWives&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Mumford &amp; Sons&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;NEULORE&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Odesza&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Paolo Nutini&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Phosphorescent&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Queen&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Reuben And The Dark&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Run-D.M.C.&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Samuel Orson&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Sharon Van Etten&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Snowmine&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Starfucker&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Tall Heights&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;The Bamboos&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;The Cinematic Orchestra&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;The Flaming Lips&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;The Kinks&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;The Neighbourhood&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;The Sheepdogs&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;The University Of Chicago&apos;s Voices In Your Head&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;The Wild Feathers&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Tom T. Hall&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Valerie June&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Wanda Jackson&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Will Dailey&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Youth Lagoon&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Al Green&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;American Gospel&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Antonio Sanchez&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Baby Bee&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Beast Make Bomb&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Bernhoft&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Bleachers&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;BØRNS&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Busty and the Bass&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Catey Shaw&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Christian Lopez Band&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Conor Oberst&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Daniel Martin Moore&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Devon Gilfillian&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Down Like Silver&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Ella Fitzgerald&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Ezra Furman&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;First Aid Kit&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Francis and the Lights&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Gayngs&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Grace Potter &amp; The Nocturnals&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Hayden Calnin&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;How I Became the Bomb&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Isbells&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;James Vincent McMorrow&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Jessica Lea Mayfield&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;John Mark Nelson&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Josh Pyke&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Kat Edmonson&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Kinny&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Langhorne Slim &amp; The Law&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Lion Babe&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Luis Trindade&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Margie Adam&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Matthew Barber&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Miner&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Mr. Little Jeans&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Naughty Boy&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Nosaj Thing&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Owl Eyes&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Penny and Sparrow&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Próxima Parada&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Redbone&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Rubblebucket&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Sam Amidon&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Seth Avett &amp; Jessica Lea Mayfield&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Smash Mouth&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;St. Petersburg Chamber Choir&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Sweet Crude&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;The Arcs&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;The Careful Ones&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;The Everly Brothers&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;The Kabeedies&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;The Mowgli&apos;s&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;The Sam Chase&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;The Swell Season&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;The Western States Motel&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Tobias Jesso Jr.&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Typhoon&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Vulfpeck&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Wild Child&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Yoav&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Aaron Embry&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Allen Stone&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Andrew Rannells&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Atta Boy&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Basia Bulat&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Ben Harper&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Big Wild&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Bobby Darin&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Broken Bells&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Carl Broemel&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Chet Faker&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Coco Méliès&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Daft Punk&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Death Cab for Cutie&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;DMX&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Earl Sweatshirt&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Empire of the Sun&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Fences&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Former Belle&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Future Thieves&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Glen Hansard&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Ha Ha Tonka&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Holly Miranda&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Imarhan&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Jackie Brenston and His Delta Cats&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Jenny Lewis&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Joe Pug&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Jon Batiste&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Justin Hurwitz&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Kid Wave&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Kyla La Grange&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Letts&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Lorde&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Majical Cloudz&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Mathien&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Middle Brother&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Moon Taxi&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Nada Surf&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Night Terrors of 1927&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;On An On&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Patrick Watson&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Poor Remy&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Raglans&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Robert Plant&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Ryan Miller&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Saturday Drive&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Sir Sly&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Sondre Lerche&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Stop Light Observations&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Thao &amp; The Get Down Stay Down&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;The Bones of J.R. Jones&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;The Dip&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;The Head and the Heart&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;The Lonely Biscuits&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;The Pussycat Dolls&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;The Staple Singers&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;The walters&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Thievery Corporation&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;tUnE-yArDs&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Vanilla&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Wheeler Brothers&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Wolf Gang&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAAsTAAALEwEAmpwY
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

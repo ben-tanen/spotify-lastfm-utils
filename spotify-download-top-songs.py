@@ -15,7 +15,7 @@ def is_track_in_playlist(track, artist, playlist):
 ###############################################################################
 
 # load in api keys
-apikeys = json.load(open("data/api-keys.json"))
+apikeys = json.load(open("/Users/ben-tanen/Desktop/Projects/spotify-lastfm-utils/data/api-keys.json"))
 
 # init API parameters for Last.FM
 lastfm_parameters = {
