@@ -28,17 +28,13 @@ def parse_album_info(album_obj):
 ###############################################################################
 
 # load in api keys
-apikeys = json.load(open("/Users/ben-tanen/Desktop/Projects/spotify-lastfm-utils/data/api-keys.json"))
+apikeys = json.load(open("data/api-keys.json"))
 
 # determine if using Spotify for data or manual entry
 print("\n1. Get album information from Spotify")
 print("2. Manually enter album information\n")
 entry_type = input("How would you like to enter the album? ")
 print()
-
-album_str = "Fine Line"
-artist_str = "Harry Styles"
-cover_url = "https://i.scdn.co/image/ab67616d00001e0277fdcfda6535601aff081b6a"
 
 # searching via spotify
 if entry_type == "1":
