@@ -1,17 +1,25 @@
 library(data.table)
+library(dplyr)
 library(ggplot2)
+library(patchwork)
 
 # set directory
 setwd('/Users/ben-tanen/Google Drive/Projects/spotify-lastfm-utils/')
 
 # import data
-dt <- data.table(read.csv('data/saved-vs-discoverweekly-audiofeat-06Aug2018.csv'))
+dt <- data.table(read.csv('data/saved-vs-discoverweekly-audiofeat-25Mar2020.csv'))
 
-# visualize
+# make plots
+plots <- list()
 for (var in c("acousticness", "danceability", "energy", "instrumentalness", 
               "key", "liveness", "loudness", "mode", "speechiness", "tempo", "valence")) {
   print(var)
-  assign(paste0("p_", var), ggplot(dt, aes_string(x = "source", y = var)) + geom_boxplot())
+  plots[[var]] <- ggplot(dt, aes_string(x = "source", y = var)) + geom_boxplot()
+}
+
+# stitch together plots with patchwork
+multiplot <- function(plots, n_col = 3, n_row = NULL) {
+    is.null(n_row)
 }
 
 multiplot <- function(..., plotlist=NULL, file, cols=1, layout=NULL) {

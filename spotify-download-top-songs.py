@@ -4,6 +4,9 @@ import spotipy.util as util
 
 ###############################################################################
 
+def clean_utf8(str, char = " "):
+    return "".join([i if ord(i) < 128 else char for i in str])
+
 def is_track_in_playlist(track, artist, playlist):
     for added_track in playlist:
         if track.lower() in added_track['name'].lower():
@@ -80,11 +83,11 @@ for track in top_tracks:
     # check if track already in playlist
     # if not, tell IFTTT to add track to download playlist
     if not is_track_in_playlist(track['name'], track['artist']['name'], playlist):
-        print('   ADDING: "%s" by %s' % (track['name'], track['artist']['name']))
+        print('   ADDING: "%s" by %s' % (clean_utf8(track['name']), clean_utf8(track['artist']['name'])))
         requests.post('https://maker.ifttt.com/trigger/specify_top_song/with/key/%s' % apikeys['ifttt-key'], data = {
             'value1': track['name'],
             'value2': track['artist']['name']
         })
     else:
-        print('DUPLICATE: "%s" by %s' % (track['name'], track['artist']['name']))
+        print('DUPLICATE: "%s" by %s' % (clean_utf8(track['name']), clean_utf8(track['artist']['name'])))
     
