@@ -28,6 +28,7 @@ def parse_album_info(album_obj):
 ###############################################################################
 
 # load in api keys
+os.chdir("/Users/ben-tanen/Desktop/Projects/spotify-lastfm-utils/")
 apikeys = json.load(open("data/api-keys.json"))
 
 # determine if using Spotify for data or manual entry

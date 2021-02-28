@@ -12,4 +12,4 @@ Current scripts include:
 - A script to identify my recent top played songs and save them in a Spotify playlist that I keep downloaded on my phone. A useful tool for keeping some of my favorite songs available when I'm out of cell range (or ran out of data).
 - Scripts for scraping and plotting my top artists on a weekly (or monthly or whatever) basis. This is for a post on my website (link to come).
 - A script to analyze the audio features of the songs in my Spotify Discover Weekly playlist as compared to the songs I had saved.
-- A script to add an album to [my website's list](http://link.ben-tanen/vinyl)
+- A script to add an album to [my website's list](http://link.ben-tanen.com/vinyl)
